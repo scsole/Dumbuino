@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Dumbuino"
+Date "2020-09-20"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author: Sebastian Sole"
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FEEFA40
+P 5900 3300
+F 0 "J2" H 5872 3274 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5872 3183 50  0000 R CNN
+F 2 "" H 5900 3300 50  0001 C CNN
+F 3 "~" H 5900 3300 50  0001 C CNN
+	1    5900 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3150 4600 3000
+Wire Wire Line
+	4600 3000 5500 3000
+Wire Wire Line
+	5500 3000 5500 3300
+Wire Wire Line
+	5500 3300 5700 3300
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5FEF2E13
+P 4500 3350
+F 0 "Q1" H 4704 3396 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4704 3305 50  0000 L CNN
+F 2 "" H 4700 3450 50  0001 C CNN
+F 3 "~" H 4500 3350 50  0001 C CNN
+	1    4500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3550 4600 3700
+Wire Wire Line
+	4600 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 3400
+Wire Wire Line
+	5500 3400 5700 3400
+Wire Wire Line
+	4300 3350 4100 3350
+Text HLabel 4100 3350 0    50   Input ~ 0
+PWR_SW0
+Wire Wire Line
+	4600 4400 4600 4250
+Wire Wire Line
+	4600 4250 5500 4250
+Wire Wire Line
+	5500 4250 5500 4550
+Wire Wire Line
+	5500 4550 5700 4550
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5FEF7749
+P 4500 4600
+F 0 "Q2" H 4704 4646 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4704 4555 50  0000 L CNN
+F 2 "" H 4700 4700 50  0001 C CNN
+F 3 "~" H 4500 4600 50  0001 C CNN
+	1    4500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4950 5500 4950
+Wire Wire Line
+	5500 4950 5500 4650
+Wire Wire Line
+	5500 4650 5700 4650
+Wire Wire Line
+	4300 4600 4100 4600
+Text HLabel 4100 4600 0    50   Input ~ 0
+PWR_SW1
+Wire Notes Line
+	7200 3300 7200 3100
+Wire Notes Line
+	7250 2750 7150 2750
+Wire Notes Line
+	7150 3100 7250 3100
+Wire Notes Line
+	7200 2750 7200 2550
+Wire Notes Line
+	7150 2550 7250 2550
+Wire Notes Line
+	7250 2750 7250 3100
+Wire Notes Line
+	7150 2750 7150 3100
+Wire Notes Line
+	7200 3400 7200 3600
+Wire Notes Line
+	7300 3600 7100 3600
+Wire Notes Line
+	7150 3650 7250 3650
+Text Notes 7350 3650 0    50   ~ 0
+GND
+Text Notes 7350 2900 0    50   ~ 0
+Load, < 10A
+Text Notes 7350 2600 0    50   ~ 0
+V+, < 60V
+Wire Notes Line
+	6850 3400 7200 3400
+Wire Notes Line
+	6850 3300 7200 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FF1DD74
+P 4600 3850
+F 0 "#PWR?" H 4600 3600 50  0001 C CNN
+F 1 "GND" H 4605 3677 50  0000 C CNN
+F 2 "" H 4600 3850 50  0001 C CNN
+F 3 "" H 4600 3850 50  0001 C CNN
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3700 4600 3850
+Connection ~ 4600 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5FF1E8B0
+P 4600 5100
+F 0 "#PWR?" H 4600 4850 50  0001 C CNN
+F 1 "GND" H 4605 4927 50  0000 C CNN
+F 2 "" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4800 4600 4950
+Wire Wire Line
+	4600 4950 4600 5100
+Connection ~ 4600 4950
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5FEF773F
+P 5900 4550
+F 0 "J3" H 5872 4524 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5872 4433 50  0000 R CNN
+F 2 "" H 5900 4550 50  0001 C CNN
+F 3 "~" H 5900 4550 50  0001 C CNN
+	1    5900 4550
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

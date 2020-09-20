@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Dumbuino"
 Date "2020-09-20"
 Rev "v01"
@@ -502,7 +502,7 @@ L Device:Crystal Y1
 U 1 1 5F6AA31F
 P 9700 5500
 F 0 "Y1" H 9700 5768 50  0000 C CNN
-F 1 "Crystal" H 9700 5677 50  0000 C CNN
+F 1 "16M" H 9700 5677 50  0000 C CNN
 F 2 "" H 9700 5500 50  0001 C CNN
 F 3 "~" H 9700 5500 50  0001 C CNN
 	1    9700 5500
