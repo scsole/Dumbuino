@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dumbuino-rescue)(type Legacy)(uri ${KIPRJMOD}/dumbuino-rescue.lib)(options "")(descr ""))
+)
